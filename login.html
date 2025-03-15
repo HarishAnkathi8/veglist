@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Natural Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="headerarea">
+        <div>
+            <h2><span>N</span>atural <span>F</span>orms</h2>
+        </div>
+        <div class="search">
+            <div class="inputtext">
+                <input type="text" placeholder="search Your Grocery items">
+            </div>
+            <div class="zoom">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="user">
+            <!-- <div>
+                <i class="fa-solid fa-user"></i>
+
+            </div> -->
+            <!-- <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div> -->
+            <!-- <div class="logindiv">
+                <a href="./login.html"> Login</a>
+            </div> -->
+        </div>
+
+    </header>
+    <div class="registrationform">
+
+        <form class="formdetails">
+            <h1>login</h1>
+            <label for="email">Email</label>
+            <input type="text" placeholder=" enter Your Eamil" required><br>
+            <label for="password">Password</label>
+            <input type="text" placeholder=" enter Your Password" required><br><br>
+            <button type="submit" onclick="handleLogin()">login</button>
+        </form>
+    </div>
+    <script>
+        function handleLogin() {
+            window.location.href = "./index.html"
+        }
+    </script>
+</body>
+
+</html>

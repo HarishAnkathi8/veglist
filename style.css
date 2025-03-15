@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    line-height: 1.6;
+}
+
+/* General styles */
+
+.headerarea {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerarea h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.headerarea .search {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.headerarea .inputtext {
+    flex: 1;
+}
+
+.headerarea input[type="text"] {
+    width: 100%;
+    padding: 12px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.headerarea .zoom {
+    padding: 5px 8px;
+    font-size: 20px;
+    background-color: rgb(103, 227, 103);
+    border-radius: 0px 10px 10px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.headerarea .user {
+    width: 100%;
+
+    max-width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+}
+
+.headerarea .user div {
+    margin: 0 5px;
+
+}
+
+.headerarea .user h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav .contentlist {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .headerarea .search,
+    .headerarea .user {
+        width: 100%;
+        max-width: none;
+    }
+
+    .headerarea .user {
+        margin-top: 20px;
+    }
+
+    .headerarea .search .zoom {
+        border-radius: 10px;
+    }
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav .contentlist {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: flex-start;
+
+    }
+
+    nav ul li {
+        flex: 1 0 50%;
+
+        max-width: 50%;
+
+    }
+
+    form {
+        border: 2px solid black;
+        padding: 15px;
+        text-align: center;
+        margin: 35px;
+        border-radius: 15px;
+    }
+
+}
+
+.productpage {
+
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.product {
+    height: 350px;
+    width: 250px;
+    border: none;
+    outline: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.product img:hover {
+    border-radius: 50%;
+    transition: ease all 0.2s;
+}
+
+.contentlist {
+    background-color: rgb(103, 227, 103);
+    padding: 15px;
+    font-weight: 500;
+
+}
+
+
+
+.productname {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.productprice {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contentlist ul li:hover {
+    font-weight: 800;
+    text-decoration: underline;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+button {
+    padding: 5px 25px;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #21c426;
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    background: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* regsitration from */
+.registrationform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+form input,
+select {
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+input,
+select {
+    margin-top: 10px;
+    outline: 2px solid lightgreen;
+    border: none;
+
+
+}
+
+.logindiv a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
